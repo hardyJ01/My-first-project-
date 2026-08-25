@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #111;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #00bfff;
+}
+
+
+/* Sections */
+
+section {
+    min-height: 100vh;
+
+    padding: 100px 30px;
+
+    text-align: center;
+}
+
+
+/* Home */
+
+#home {
+    background-color: #e8f4ff;
+}
+
+#home h1 {
+    font-size: 45px;
+}
+
+
+/* Skills */
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills div {
+    background-color: white;
+
+    padding: 20px 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+
+/* Projects */
+
+.project {
+    background-color: white;
+
+    max-width: 600px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+
+/* Button */
+
+button {
+    background-color: #111;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 80px 15px;
+    }
+}
+#contactForm {
+    max-width: 500px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    width: 100%;
+}
+
+#contactForm textarea {
+    height: 150px;
+    resize: none;
+}
+
+#contactForm button {
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.name-box {
+    background-color: white;
+
+    max-width: 450px;
+
+    margin: 40px auto;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.name-box input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+.name-box button {
+    cursor: pointer;
+}
+.api-box {
+    background-color: white;
+
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+#joke {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    min-height: 50px;
+}
